@@ -1,0 +1,21 @@
+{
+  "name": "werkint/templating-bundle",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vladimir Odesskij",
+      "email": "odesskij1992@gmail.com"
+    }
+  ],
+  "require": {
+    "symfony/framework-bundle": ">=2.0.9",
+    "php": ">=5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Brander\\Bundle\\TemplatingBundle\\": "src"
+    }
+  },
+  "minimum-stability": "dev"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "brander-templating",
+  "version": "0.1.0",
+  "main": [
+    "TemplatingBundle/Resources/public/js/template.js"
+  ],
+  "authors": [
+    "Vladimir Odesskij <odesskij1992@gmail.com>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.17",
+    "requirejs-plugins": "~1.0.3"
+  }
+}
