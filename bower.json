@@ -1,5 +1,5 @@
 {
-  "name": "brander-templating",
+  "name": "brander-templating-bundle",
   "version": "0.1.0",
   "main": [
     "TemplatingBundle/Resources/public/js/template.js"
