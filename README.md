@@ -29,6 +29,21 @@ app/config/routing.yml:
 $router->generate('ajax_templating', ['template' => '@YourBundle/Some/someTemplate.twig'])
 `````
 
+OR
+
+`````
+define([
+    'some-module/views/view',
+    'template!@YourBundle/Some/someTemplate.twig'
+], function (View, template) {
+    'use strict';
+
+    return View.extend({
+        'template': template,
+    });
+});
+`````
+
 ### JS
 
 `````
