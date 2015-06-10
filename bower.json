@@ -2,6 +2,7 @@
   "name": "brander-templating-bundle",
   "version": "0.1.0",
   "main": [
+    "src/Resources/public/js/templating.js",
     "src/Resources/public/js/template.js"
   ],
   "authors": [
