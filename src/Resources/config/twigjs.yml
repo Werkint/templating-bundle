@@ -1,0 +1,23 @@
+parameters:
+  brander_templating.twig.twigjs.twigjsextension.class:
+    Brander\Bundle\TemplatingBundle\Twig\Twigjs\JsTemplatingExtension
+  brander_templating.twig.twigjs.twigjstokenparser.class:
+    Brander\Bundle\TemplatingBundle\Twig\Twigjs\TwigJsTokenParser
+  brander_templating.twig.twigjs.twigjsresulttokenparser.class:
+    Brander\Bundle\TemplatingBundle\Twig\Twigjs\TwigJsResultTokenParser
+
+services:
+  # Twig - основное расширение сайта
+  brander_templating.twig.twigjs.twigjsextension:
+    class: %brander_templating.twig.twigjs.twigjsextension.class%
+    public: false
+    arguments:
+      - @twig
+      - @brander_templating.twig.twigjs.twigjstokenparser
+      - @brander_templating.twig.twigjs.twigjsresulttokenparser
+    tags:
+      - { name: twig.extension }
+  brander_templating.twig.twigjs.twigjstokenparser:
+    class: %brander_templating.twig.twigjs.twigjstokenparser.class%
+  brander_templating.twig.twigjs.twigjsresulttokenparser:
+    class: %brander_templating.twig.twigjs.twigjsresulttokenparser.class%

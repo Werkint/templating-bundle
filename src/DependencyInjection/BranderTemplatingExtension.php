@@ -25,5 +25,6 @@ class BranderTemplatingExtension extends Extension
             new FileLocator($configDir)
         );
         $loader->load('services.yml');
+        $loader->load('twigjs.yml');
     }
 }
