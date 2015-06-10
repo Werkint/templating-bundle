@@ -1,5 +1,6 @@
 <?php
 namespace Brander\Bundle\TemplatingBundle\Twig\Twigjs;
+use Brander\Bundle\TemplatingBundle\Service\TemplateParser;
 
 /**
  * Основное TWIG-расширение
@@ -8,26 +9,43 @@ namespace Brander\Bundle\TemplatingBundle\Twig\Twigjs;
  */
 class JsTemplatingExtension extends \Twig_Extension
 {
-    protected $templating;
-    protected $kernel;
-    protected $twigJsTokenParser;
-    protected $twigJsResultTokenParser;
-
     const EXT_NAME = 'js_templating_twig_js';
 
     /**
-     * @param \Twig_Environment       $templating
-     * @param TwigJsTokenParser       $twigJsTokenParser
+     * @var \Twig_Environment
+     */
+    protected $templating;
+    /**
+     * @var TwigJsTokenParser
+     */
+    protected $twigJsTokenParser;
+
+    /**
+     * @var TwigJsResultTokenParser
+     */
+    protected $twigJsResultTokenParser;
+    /**
+     * @var TemplateParser
+     */
+    private $templateParser;
+
+    /**
+     * @param \Twig_Environment $templating
+     * @param TwigJsTokenParser $twigJsTokenParser
      * @param TwigJsResultTokenParser $twigJsResultTokenParser
+     * @param TemplateParser $templateParser
      */
     public function __construct(
         \Twig_Environment $templating,
         TwigJsTokenParser $twigJsTokenParser,
-        TwigJsResultTokenParser $twigJsResultTokenParser
-    ) {
+        TwigJsResultTokenParser $twigJsResultTokenParser,
+        TemplateParser $templateParser
+    )
+    {
         $this->templating = $templating;
         $this->twigJsTokenParser = $twigJsTokenParser;
         $this->twigJsResultTokenParser = $twigJsResultTokenParser;
+        $this->templateParser = $templateParser;
     }
 
     /**

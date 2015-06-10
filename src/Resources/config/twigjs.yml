@@ -15,6 +15,7 @@ services:
       - @twig
       - @brander_templating.twig.twigjs.twigjstokenparser
       - @brander_templating.twig.twigjs.twigjsresulttokenparser
+      - @brander_templating.template_parser
     tags:
       - { name: twig.extension }
   brander_templating.twig.twigjs.twigjstokenparser:
