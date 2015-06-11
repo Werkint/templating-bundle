@@ -1,5 +1,5 @@
 <?php
-namespace Brander\Bundle\TemplatingBundle\Exception;
+namespace Werkint\Bundle\TemplatingBundle\Exception;
 
 /**
  * TemplateNotFoundException.

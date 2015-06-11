@@ -1,5 +1,5 @@
 <?php
-namespace Brander\Bundle\TemplatingBundle\DependencyInjection\Compiler;
+namespace Werkint\Bundle\TemplatingBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -15,8 +15,8 @@ use Symfony\Component\DependencyInjection\Reference;
 class PublicTemplateCompilerPass implements
     CompilerPassInterface
 {
-    const SERVICE = 'brander_templating.access_checker';
-    const TAG = 'brander_templating.public_template';
+    const SERVICE = 'werkint_templating..access_checker';
+    const TAG = 'werkint_templating..public_template';
 
     /**
      * @inheritdoc

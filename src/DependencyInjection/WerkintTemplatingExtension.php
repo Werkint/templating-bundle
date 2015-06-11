@@ -1,5 +1,5 @@
 <?php
-namespace Brander\Bundle\TemplatingBundle\DependencyInjection;
+namespace Werkint\Bundle\TemplatingBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -7,11 +7,11 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 /**
- * BranderTemplatingExtension.
+ * WerkintTemplatingExtension.
  *
  * @author Vladimir Odesskij <odesskij1992@gmail.com>
  */
-class BranderTemplatingExtension extends Extension
+class WerkintTemplatingExtension extends Extension
 {
     /**
      * @inheritdoc

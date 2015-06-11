@@ -1,5 +1,5 @@
 <?php
-namespace Brander\Bundle\TemplatingBundle\Twig\Twigjs;
+namespace Werkint\Bundle\TemplatingBundle\Twig\Twigjs;
 
 /**
  * @author Bogdan Yurov <bogdan@yurov.me>

@@ -1,9 +1,9 @@
 <?php
-namespace Brander\Bundle\TemplatingBundle\Controller;
+namespace Werkint\Bundle\TemplatingBundle\Controller;
 
-use Brander\Bundle\TemplatingBundle\Exception\TemplateAccessDeniedException;
-use Brander\Bundle\TemplatingBundle\Service\AccessChecker;
-use Brander\Bundle\TemplatingBundle\Service\TemplateFinder;
+use Werkint\Bundle\TemplatingBundle\Exception\TemplateAccessDeniedException;
+use Werkint\Bundle\TemplatingBundle\Service\AccessChecker;
+use Werkint\Bundle\TemplatingBundle\Service\TemplateFinder;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 

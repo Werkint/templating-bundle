@@ -1,16 +1,16 @@
 <?php
-namespace Brander\Bundle\TemplatingBundle;
+namespace Werkint\Bundle\TemplatingBundle;
 
-use Brander\Bundle\TemplatingBundle\DependencyInjection\Compiler\PublicTemplateCompilerPass;
+use Werkint\Bundle\TemplatingBundle\DependencyInjection\Compiler\PublicTemplateCompilerPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * BranderTemplatingBundle.
+ * WerkintTemplatingBundle.
  *
  * @author Vladimir Odesskij <odesskij1992@gmail.com>
  */
-class BranderTemplatingBundle extends Bundle
+class WerkintTemplatingBundle extends Bundle
 {
     /**
      * @inheritdoc

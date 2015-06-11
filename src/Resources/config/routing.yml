@@ -1,5 +1,5 @@
 ajax_templating:
   path:      /template/{template}
-  defaults:  { _controller: brander_templating.template_controller:getAction }
+  defaults:  { _controller: werkint_templating..template_controller:getAction }
   requirements:
     template: ".+"

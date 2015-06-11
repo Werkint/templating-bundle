@@ -1,24 +1,24 @@
 parameters:
-  brander_templating.twig.twigjs.twigjsextension.class:
-    Brander\Bundle\TemplatingBundle\Twig\Twigjs\JsTemplatingExtension
-  brander_templating.twig.twigjs.twigjstokenparser.class:
-    Brander\Bundle\TemplatingBundle\Twig\Twigjs\TwigJsTokenParser
-  brander_templating.twig.twigjs.twigjsresulttokenparser.class:
-    Brander\Bundle\TemplatingBundle\Twig\Twigjs\TwigJsResultTokenParser
+  werkint_templating..twig.twigjs.twigjsextension.class:
+    Werkint\Bundle\TemplatingBundle\Twig\Twigjs\JsTemplatingExtension
+  werkint_templating..twig.twigjs.twigjstokenparser.class:
+    Werkint\Bundle\TemplatingBundle\Twig\Twigjs\TwigJsTokenParser
+  werkint_templating..twig.twigjs.twigjsresulttokenparser.class:
+    Werkint\Bundle\TemplatingBundle\Twig\Twigjs\TwigJsResultTokenParser
 
 services:
   # Twig - основное расширение сайта
-  brander_templating.twig.twigjs.twigjsextension:
-    class: %brander_templating.twig.twigjs.twigjsextension.class%
+  werkint_templating..twig.twigjs.twigjsextension:
+    class: %werkint_templating..twig.twigjs.twigjsextension.class%
     public: false
     arguments:
       - @twig
-      - @brander_templating.twig.twigjs.twigjstokenparser
-      - @brander_templating.twig.twigjs.twigjsresulttokenparser
-      - @brander_templating.template_parser
+      - @werkint_templating..twig.twigjs.twigjstokenparser
+      - @werkint_templating..twig.twigjs.twigjsresulttokenparser
+      - @werkint_templating..template_parser
     tags:
       - { name: twig.extension }
-  brander_templating.twig.twigjs.twigjstokenparser:
-    class: %brander_templating.twig.twigjs.twigjstokenparser.class%
-  brander_templating.twig.twigjs.twigjsresulttokenparser:
-    class: %brander_templating.twig.twigjs.twigjsresulttokenparser.class%
+  werkint_templating..twig.twigjs.twigjstokenparser:
+    class: %werkint_templating..twig.twigjs.twigjstokenparser.class%
+  werkint_templating..twig.twigjs.twigjsresulttokenparser:
+    class: %werkint_templating..twig.twigjs.twigjsresulttokenparser.class%

@@ -10,11 +10,12 @@
   ],
   "require": {
     "symfony/framework-bundle": ">=2.0.9",
+    "werkint/frontend-mapper-bundle": "*",
     "php": ">=5.5"
   },
   "autoload": {
     "psr-4": {
-      "Brander\\Bundle\\TemplatingBundle\\": "src"
+      "Werkint\\Bundle\\TemplatingBundle\\": "src"
     }
   },
   "minimum-stability": "dev"

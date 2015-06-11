@@ -1,6 +1,6 @@
 <?php
-namespace Brander\Bundle\TemplatingBundle\Service;
-use Brander\Bundle\TemplatingBundle\Exception\TemplateNotFoundException;
+namespace Werkint\Bundle\TemplatingBundle\Service;
+use Werkint\Bundle\TemplatingBundle\Exception\TemplateNotFoundException;
 
 /**
  * TemplateParser.
@@ -26,7 +26,7 @@ class TemplateParser
     /**
      * @param string $template
      * @return array
-     * @throws \Brander\Bundle\TemplatingBundle\Exception\TemplateNotFoundException
+     * @throws \Werkint\Bundle\TemplatingBundle\Exception\TemplateNotFoundException
      */
     public function parse($template)
     {

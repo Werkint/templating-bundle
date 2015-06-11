@@ -1,5 +1,5 @@
 <?php
-namespace Brander\Bundle\TemplatingBundle\Service;
+namespace Werkint\Bundle\TemplatingBundle\Service;
 
 /**
  * AccessChecker.

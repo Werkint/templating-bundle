@@ -10,7 +10,7 @@ composer require 'werkint/templating-bundle:dev-master'
 AppKernel::registerBundles:
 `````
         ...
-    new \Brander\Bundle\TemplatingBundle\BranderTemplatingBundle()
+    new \Werkint\Bundle\TemplatingBundle\WerkintTemplatingBundle()
         ...
 `````        
         
@@ -18,8 +18,8 @@ AppKernel::registerBundles:
 
 app/config/routing.yml:
 `````        
-    brander_templating:
-      resource: "@BranderTemplatingBundle/Resources/config/routing.yml"
+    werkint_templating.:
+      resource: "@WerkintTemplatingBundle/Resources/config/routing.yml"
       prefix: "/api"
       options:
         expose: true
@@ -65,7 +65,7 @@ services:
     arguments:
       - % your_bundle.public_templates%
     tags:
-      - {name: brander_templating.public_template }
+      - {name: werkint_templating..public_template }
 ````
 
-Or Brander\Bundle\TemplatingBundle\Service\TemplateProviderInterface
+Or Werkint\Bundle\TemplatingBundle\Service\TemplateProviderInterface

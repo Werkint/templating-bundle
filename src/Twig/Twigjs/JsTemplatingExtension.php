@@ -1,6 +1,6 @@
 <?php
-namespace Brander\Bundle\TemplatingBundle\Twig\Twigjs;
-use Brander\Bundle\TemplatingBundle\Service\TemplateParser;
+namespace Werkint\Bundle\TemplatingBundle\Twig\Twigjs;
+use Werkint\Bundle\TemplatingBundle\Service\TemplateParser;
 
 /**
  * Основное TWIG-расширение

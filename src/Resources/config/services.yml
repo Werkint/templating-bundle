@@ -1,16 +1,16 @@
 services:
-  brander_templating.template_controller:
-    class: Brander\Bundle\TemplatingBundle\Controller\TemplateController
+  werkint_templating..template_controller:
+    class: Werkint\Bundle\TemplatingBundle\Controller\TemplateController
     arguments:
-      - @brander_templating.template_finder
-      - @brander_templating.access_checker
-  brander_templating.template_finder:
-    class: Brander\Bundle\TemplatingBundle\Service\TemplateFinder
+      - @werkint_templating..template_finder
+      - @werkint_templating..access_checker
+  werkint_templating..template_finder:
+    class: Werkint\Bundle\TemplatingBundle\Service\TemplateFinder
     arguments:
-      - @brander_templating.template_parser
-  brander_templating.template_parser:
-    class: Brander\Bundle\TemplatingBundle\Service\TemplateParser
+      - @werkint_templating..template_parser
+  werkint_templating..template_parser:
+    class: Werkint\Bundle\TemplatingBundle\Service\TemplateParser
     arguments:
       - @twig
-  brander_templating.access_checker:
-    class: Brander\Bundle\TemplatingBundle\Service\AccessChecker
+  werkint_templating..access_checker:
+    class: Werkint\Bundle\TemplatingBundle\Service\AccessChecker

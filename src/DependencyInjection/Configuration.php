@@ -1,5 +1,5 @@
 <?php
-namespace Brander\Bundle\TemplatingBundle\DependencyInjection;
+namespace Werkint\Bundle\TemplatingBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
