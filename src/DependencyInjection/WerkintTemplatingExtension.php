@@ -26,5 +26,15 @@ class WerkintTemplatingExtension extends Extension
         );
         $loader->load('services.yml');
         $loader->load('twigjs.yml');
+
+        // У нас есть корневые скрипты
+        $container->setParameter(
+            $this->getAlias() . '.frontend_config', [
+                [
+                    'path' => realpath(__DIR__ . '/../Resources/frontend'),
+                    'name' => '',
+                ],
+            ]
+        );
     }
 }

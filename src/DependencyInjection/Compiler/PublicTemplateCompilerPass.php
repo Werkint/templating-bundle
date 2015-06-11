@@ -15,8 +15,8 @@ use Symfony\Component\DependencyInjection\Reference;
 class PublicTemplateCompilerPass implements
     CompilerPassInterface
 {
-    const SERVICE = 'werkint_templating..access_checker';
-    const TAG = 'werkint_templating..public_template';
+    const SERVICE = 'werkint_templating.access_checker';
+    const TAG = 'werkint_templating.public_template';
 
     /**
      * @inheritdoc

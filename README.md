@@ -65,7 +65,7 @@ services:
     arguments:
       - % your_bundle.public_templates%
     tags:
-      - {name: werkint_templating..public_template }
+      - {name: werkint_templating.public_template }
 ````
 
 Or Werkint\Bundle\TemplatingBundle\Service\TemplateProviderInterface
