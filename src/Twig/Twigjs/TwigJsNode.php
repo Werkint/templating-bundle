@@ -24,7 +24,7 @@ class TwigJsNode extends \Twig_Node
      */
     public function compile(\Twig_Compiler $compiler)
     {
-        $ext = JsTemplatingExtension::EXT_NAME;
+        $ext = WerkintTemplatingTwigjsExtension::EXT_NAME;
         $compiler
             ->addDebugInfo($this)
             ->write('$this->env->getExtension(\'' . $ext . '\')->loadTwigJs(')

@@ -20,7 +20,7 @@ class TwigJsResultNode extends \Twig_Node
      */
     public function compile(\Twig_Compiler $compiler)
     {
-        $ext = JsTemplatingExtension::EXT_NAME;
+        $ext = WerkintTemplatingTwigjsExtension::EXT_NAME;
         $compiler
             ->addDebugInfo($this)
             ->write('echo $this->env->getExtension(\'' . $ext . '\')->loadModules()')

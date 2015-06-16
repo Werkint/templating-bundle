@@ -1,6 +1,6 @@
 parameters:
   werkint_templating.twig.twigjs.twigjsextension.class:
-    Werkint\Bundle\TemplatingBundle\Twig\Twigjs\JsTemplatingExtension
+    Werkint\Bundle\TemplatingBundle\Twig\Twigjs\WerkintTemplatingTwigjsExtension
   werkint_templating.twig.twigjs.twigjstokenparser.class:
     Werkint\Bundle\TemplatingBundle\Twig\Twigjs\TwigJsTokenParser
   werkint_templating.twig.twigjs.twigjsresulttokenparser.class:
