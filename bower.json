@@ -3,11 +3,12 @@
   "main": "bower.json",
   "dependencies": {
     "requirejs": "*",
-    "requirejs-plugins": "*",
+    "requirejs.plugins": "*",
+    "requirejs.domready": "*",
+
     "jquery": "*",
     "lodash": "*",
-    "twig.js": "*",
-    "domReady": "*"
+    "twig": "*"
   },
   "ignore": [
     "**/*"
