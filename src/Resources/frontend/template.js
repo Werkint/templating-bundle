@@ -24,7 +24,9 @@ define([
                     }), function (data) {
                         try {
                             JSON.parse(data).forEach(function (template) {
-                                templating.addTemplate(template.name, template.source);
+                                if (!templating.findBlock(template.name)) {
+                                    templating.addTemplate(template.name, template.source);
+                                }
                             });
                             onLoad(templating.get(name));
                         } catch (e) {
