@@ -38,7 +38,7 @@ class TemplateParser
             }
 
             try {
-                $source = $this->templating->getLoader()->getSource($template);
+                $source = $this->templating->getLoader()->getSource($name);
             } catch (\Twig_Error_Loader $exception) {
                 throw new TemplateNotFoundException($template);
             }
