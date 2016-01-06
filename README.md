@@ -1,5 +1,8 @@
 # Templating
 
+### Deprecated
+use twig compile instead; and you can use bower
+
 ### Composer
 
 `````
@@ -34,7 +37,7 @@ OR
 `````
 define([
     'some-module/views/view',
-    'template!@YourBundle/Some/someTemplate.twig'
+    'werkint-templating/template!@YourBundle/Some/someTemplate.twig'
 ], function (View, template) {
     'use strict';
 

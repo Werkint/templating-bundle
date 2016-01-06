@@ -32,7 +32,7 @@ class WerkintTemplatingExtension extends Extension
             $this->getAlias() . '.frontend_config', [
                 [
                     'path' => realpath(__DIR__ . '/../Resources/frontend'),
-                    'name' => '',
+                    'name' => 'werkint-templating',
                 ],
             ]
         );
