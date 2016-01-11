@@ -2,15 +2,15 @@ services:
   werkint_templating.template_controller:
     class: Werkint\Bundle\TemplatingBundle\Controller\TemplateController
     arguments:
-      - @werkint_templating.template_finder
-      - @werkint_templating.access_checker
+      - "@werkint_templating.template_finder"
+      - "@werkint_templating.access_checker"
   werkint_templating.template_finder:
     class: Werkint\Bundle\TemplatingBundle\Service\TemplateFinder
     arguments:
-      - @werkint_templating.template_parser
+      - "@werkint_templating.template_parser"
   werkint_templating.template_parser:
     class: Werkint\Bundle\TemplatingBundle\Service\TemplateParser
     arguments:
-      - @twig
+      - "@twig"
   werkint_templating.access_checker:
     class: Werkint\Bundle\TemplatingBundle\Service\AccessChecker

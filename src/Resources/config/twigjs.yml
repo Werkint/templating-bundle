@@ -12,10 +12,10 @@ services:
     class: %werkint_templating.twig.twigjs.twigjsextension.class%
     public: false
     arguments:
-      - @twig
-      - @werkint_templating.twig.twigjs.twigjstokenparser
-      - @werkint_templating.twig.twigjs.twigjsresulttokenparser
-      - @werkint_templating.template_parser
+      - "@twig"
+      - "@werkint_templating.twig.twigjs.twigjstokenparser"
+      - "@werkint_templating.twig.twigjs.twigjsresulttokenparser"
+      - "@werkint_templating.template_parser"
     tags:
       - { name: twig.extension }
   werkint_templating.twig.twigjs.twigjstokenparser:
